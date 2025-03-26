@@ -2,6 +2,9 @@
 import localFont from "next/font/local";
 import {useState} from "react";
 import Modal from "./components/modal";
+import {Discord} from "@deemlol/next-icons";
+import {Facebook} from "@deemlol/next-icons";
+import {Instagram} from "@deemlol/next-icons";
 
 const myFont = localFont({
   src: "../public/fonts/SpaceCrusadersItalic-ZV1Zx.ttf",
@@ -216,8 +219,9 @@ export default function Home() {
               </h1>
               <p
                 className={`${introFont.className} text-[#000] text-lg md:text-xl uppercase`}>
+                техникийн зөвлөгөөн 03 сарын 28 -нд 17:00 цагаас. <br />
                 Тэмцээн 2025 оны 3-р сарын 29-нд өглөө 9 цагаас эхлэх бөгөөд
-                цагаасаа хоцорсон багууд хасагдахын анхаарна уу
+                цагаасаа хоцорсон багууд хасагдахын анхаарна уу.
               </p>
             </div>
             <div className='flex-1  py-[24px] '>
@@ -237,11 +241,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='w-full h-[300px] bg-[#0000] flex flex-col items-center py-10'>
+        <div className='w-full h-[300px] bg-[#0000] flex flex-col items-center py-10 gap-[48px]'>
           <h1
-            className={`${myFont.className} absolute z-40   text-4xl text-center  md:text-5xl uppercase `}>
+            className={`${myFont.className}    text-4xl text-center  md:text-5xl uppercase `}>
             flow us on social media
           </h1>
+          <div className='w-[300px] grid grid-cols-3 '>
+            <div className='w-[50px] h-[50px] rounded-[50%] bg-[#c5a574] flex justify-center items-center'>
+              <Discord size={24} color='#FFFFFF' />
+            </div>
+            <div className='w-[50px] h-[50px] rounded-[50%] bg-[#c5a574] flex justify-center items-center'>
+              <Facebook size={24} color='#FFFFFF' />
+            </div>
+            <div className='w-[50px] h-[50px] rounded-[50%] bg-[#c5a574] flex justify-center items-center'>
+              <Instagram size={24} color='#FFFFFF' />
+            </div>
+          </div>
         </div>
         <div className='h-[50px] bg-[#c5a574] flex  justify-center items-center'>
           <h1
